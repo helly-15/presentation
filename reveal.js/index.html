@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section><h1>TypeScript </h1><br>superset of JavaScript</br>
+					<aside class="notes">
+						TypeScript is an open-source programming language developed and maintained by Microsoft.TypeScript was first made public in October 2012. Typescript allows you to avoid billion dollar mistake, when your variable is assigned to null
+					</aside>
+				<img src="./assets/superset-logo.jpg">
+				</section>
+				<section>
+					<section>
+						<h2>Why do I need it? </h2>
+					<ol>
+						<li>
+							Can you easily write 1000 lines of JS and not go mad?
+						</li>
+						<li>
+							Do you have a team and collaborate effectively?
+						</li>
+						<li>
+							Yes? Are you actually using JS?
+						</li>
+					</ol>
+					</section>
+					<section>
+							JS runs in a variety of devices and is a cross platform language.
+							But...<br><br> <strong>it <b>hasn’t  </b>been designed as a large scale application development language</strong> 
+							
+					</section>
+					<section>
+						<mark> JS doesn't have type system...</mark>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>No worries! </h2><br> 
+						Typescript allows you to stay in the ecosystem of JS and have a statically typed system at the same time
+					</section>
+					
+					<section>
+						<h2>Enjoy TypeScript:</h2>
+						<li>Code navigation</li>
+						<li>Statement completion</li>
+						<li>Safe refactoring</li>
+						<li>Error checking before running a program</li>
+						<li>Transpiling latest versions of JS down to older targets</li>
+					</section>
+					
+				</section>
+				<section>
+					<section>
+						Feel ready to start? <br><em>Go for it! </em> 
+					</section>
+					<section>
+						<li>Install with npm</li>
+						<li>Doing this will give you access to tsc command which will run typescript compiler</li>
+						<li>Convert the code into vanilla JS</li>
+						<li>run tsc index.ts - tadam index.js was created!</li>
+					</section>
+					
+				</section>
+				<section>
+					<section>
+						<h2>Examples time! </h2>
+					</section>
+					<section>
+							Adding types to your programm
+							<img src="./assets/function.PNG">
+					</section>
+					<section>
+							Transpilation capabilities
+							<img src="./assets/transpilation.PNG">
+					</section>
+					<section>
+						Classes
+						<img src="./assets/class.PNG">
+					</section>
+					<section>
+						Autocomplete<br>
+						<em> You can use autocomplete on the URL class and see your mistakes</em>
+						<img src="./assets/autocomplite.PNG">
+					</section>
+					<section>
+						Error Correction
+						<img src="./assets/ErrorCorrection.PNG">
+					</section>
+					<section>
+						Strong typing array
+						<img src="./assets/array.PNG">
+					</section>
+					<section>
+						Flexibility
+						<img src="./assets/any.PNG">
+					</section>
+				</section>
+				<section>
+					<section>
+					<h2>Some cool stuff </h2>:<br>
+						You can use all the modern language features of TypeScript in your applications, but you can still target and support older browsers. 
+					</section>
+					<section>
+							You can select any version of JavaScript via the --target compiler option that you want, starting with the ECMAScript 3
+					</section>
+				</section>
+				<section>
+						<h3>Fun fact:<br> </h3>
+						Visual Studio Code is written entirely on TypeScript
+						<img src="./assets/sheldon.jpg" width="300px">
+						<br><em>Bazzinga! </em>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
